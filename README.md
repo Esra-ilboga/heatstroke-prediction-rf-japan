@@ -7,17 +7,46 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 
 ---
 
-## 📁 Veri Kümesi
+## 📁 Veri Kümesi Hakkında Bilgi
 
-Kullanılan veri seti: **HSAD.csv**
+**Kullanılan Veri Seti:** `HSAD.csv`  
+**Makale:** "Datasets for quantifying association between short-term exposure to maximum temperature and heatstroke-related ambulance dispatches in Japan: A time-stratified case-crossover design"  
+**Yazar:** Keita Wagatsuma  
+**Yayın Platformu:** Data in Brief  
+**Makale Linki:** [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S2352340925000393)
 
-Veri setinde yer alan bazı sütunlar:
+---
 
-- `Date` – Olay tarihi (silinmiştir)
-- `Prefecturename` – Japonya’daki il adı (Label Encoding uygulanmıştır)
-- `HSAD` – Ambulans çağrısı oranı (0 ile 1 arasında)
-- `Tempmax`, `Rhumave` – Günlük sıcaklık ve nem ortalamaları
-- `Year`, `Month`, `Day`, `Dow`, `Holiday` gibi zaman ve bağlamsal veriler
+### 📊 Genel Bilgiler
+
+| Özellik                | Açıklama                                                      |
+|------------------------|--------------------------------------------------------------|
+| **Dönem**              | 2010 - 2019                                                  |
+| **Ülke**               | Japonya                                                      |
+| **Toplam Gözlem Sayısı** | 28.200 satır                                                |
+| **Sayısal Özellikler** | Prefecture, HSAD, Tempmax, Rhumave, Dow, Holiday, Month, Day, Year |
+| **Kategorik Özellikler** | Date, Prefecturename                                        |
+| **Hedef Değişken (Target)** | HSAD (Ambulans çağrısı oranı veya sayısı)                  |
+
+---
+
+### 🔍 Özellikler ve Açıklamaları
+
+| Özellik          | Açıklama                                                         |
+|------------------|------------------------------------------------------------------|
+| **Date**         | Olayın gerçekleştiği tarih (orijinalde bulunan, ancak silinmiş) |
+| **Prefecture**    | Japonya’daki bölge ID’si (örn. Hokkaido=1, Kanagawa=14, Hiroshima=34) |
+| **Prefecturename**| Bölge adı (Label Encoding uygulanmış)                           |
+| **HSAD**         | Ambulans çağrısı oranı veya sayısı (0 ile 1 arasında)            |
+| **Year**         | Tarihin yıl bilgisi                                              |
+| **Month**        | Tarihin ay bilgisi                                              |
+| **Day**          | Tarihin gün bilgisi                                             |
+| **Dow**          | Haftanın günü (Sayısal, Pazar=1, Cumartesi=7)                   |
+| **Holiday**      | Tatil durumu (0 = Tatil değil, 1 = Tatil)                       |
+| **Tempmax**      | Günün en yüksek sıcaklık değeri                                 |
+| **Rhumave**      | Günlük ortalama nem değeri                                      |
+
+---
 
 ---
 

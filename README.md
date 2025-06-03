@@ -95,7 +95,13 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 ---
 
 **Açıklamalar:**
+Histogramlar, veri setindeki sayısal değişkenlerin dağılımını görselleştirerek hangi değer aralıklarında yoğunlaştıklarını göstermektedir:
 
+- **Tempmax** değişkeni yaklaşık normal dağılırken, sağa çarpık yapısı aşırı sıcaklık günlerini işaret etmektedir.  
+- **Rhumave** verisi %40–%80 arasında yoğunlaşarak nemli iklim koşullarını yansıtır.  
+- **HSAD** değişkeninde veriler büyük ölçüde 0 çevresinde toplanmış olup, veri setinde ciddi bir sınıf dengesizliği bulunduğunu göstermektedir.  
+
+Bu dağılımlar, değişkenler arasındaki ölçek farklılıklarını da ortaya koymakta ve normalizasyon ihtiyacını desteklemektedir.
 
 ---
 

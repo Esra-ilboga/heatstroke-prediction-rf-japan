@@ -60,7 +60,6 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 - Korelasyon, dağılım ve boxplot analizleri yapılmıştır.
 
 ---
----
 
 ### Scatter Plotlar
 
@@ -68,11 +67,15 @@ Aşağıdaki grafikler, HSAD hedef değişkeni ile bazı önemli özelliklerin i
 
 | ![HSAD vs Tempmax](path_to_scatter_tempmax.png) | ![HSAD vs Rhumave](path_to_scatter_rhumave.png) |
 |:-----------------------------------------------:|:----------------------------------------------:|
-| *HSAD ile Maksimum Sıcaklık arasında pozitif ilişki vardır. 30°C üzerindeki sıcaklıklarda çağrılar artmaktadır.* | *Ortalama nem ile HSAD arasında hafif pozitif ilişki gözlenir. Nem, sıcaklıkla birlikte değerlendirilmelidir.* |
+
+*HSAD ile Maksimum Sıcaklık arasında pozitif ilişki vardır. 30°C üzerindeki sıcaklıklarda çağrılar artmaktadır.*  
+*Ortalama nem ile HSAD arasında hafif pozitif ilişki gözlenir. Nem, sıcaklıkla birlikte değerlendirilmelidir.*
 
 | ![HSAD vs Holiday](path_to_scatter_holiday.png) | ![HSAD vs Month](path_to_scatter_month.png) |
 |:-----------------------------------------------:|:------------------------------------------:|
-| *Tatil olmayan günlerde ambulans çağrısı daha fazladır.* | *Temmuz ve Ağustos aylarında çağrılar yoğunlaşmıştır, mevsimsel etkiler vardır.* |
+
+*Tatil olmayan günlerde ambulans çağrısı daha fazladır.*  
+*Temmuz ve Ağustos aylarında çağrılar yoğunlaşmıştır, mevsimsel etkiler vardır.*
 
 ---
 
@@ -82,15 +85,18 @@ Aşağıdaki histogramlar sayısal sütunların veri dağılımını göstermekt
 
 | ![Histogram Tempmax](path_to_hist_tempmax.png) |
 |:----------------------------------------------:|
-| *Tempmax sütunu sağa çarpık bir dağılıma sahiptir, yüksek sıcaklıklar nadir fakat kritik önemdedir.* |
+
+*Tempmax sütunu sağa çarpık bir dağılıma sahiptir, yüksek sıcaklıklar nadir fakat kritik önemdedir.*
 
 | ![Histogram Rhumave](path_to_hist_rhumave.png) |
 |:-----------------------------------------------:|
-| *Nem değerleri çoğunlukla %40-80 aralığında yoğunlaşmıştır.* |
+
+*Nem değerleri çoğunlukla %40-80 aralığında yoğunlaşmıştır.*
 
 | ![Histogram HSAD](path_to_hist_hsad.png) |
 |:-----------------------------------------:|
-| *HSAD çoğunlukla 0 civarında toplanmıştır; düşük ve yüksek çağrılar nispeten azdır.* |
+
+*HSAD çoğunlukla 0 civarında toplanmıştır; düşük ve yüksek çağrılar nispeten azdır.*
 
 ---
 

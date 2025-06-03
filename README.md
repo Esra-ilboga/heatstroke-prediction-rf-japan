@@ -72,12 +72,14 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 
 **Açıklamalar:**
 
-- *HSAD ile Maksimum Sıcaklık arasında pozitif ilişki vardır. 30°C üzerindeki sıcaklıklarda çağrılar artmaktadır.*  
-- *Ortalama nem ile HSAD arasında hafif pozitif ilişki gözlenir. Nem, sıcaklıkla birlikte değerlendirilmelidir.*  
-- *Tatil olmayan günlerde ambulans çağrısı daha fazladır.*  
-- *Temmuz ve Ağustos aylarında çağrılar yoğunlaşmıştır, mevsimsel etkiler vardır.*  
-- *2018 ve 2019 yıllarında HSAD çağrılarında artış görülmektedir.*  
-- *Diğer özelliklerin HSAD ile ilişkileri incelenmiştir ve anlamlı bulgulara ulaşılmıştır.*
+- **HSAD ile maksimum sıcaklık (Tempmax)** arasında doğrusal olmayan fakat güçlü bir pozitif ilişki gözlenmiştir. Özellikle **30°C üzerindeki sıcaklıklarda** çağrılarda belirgin artışlar meydana gelmektedir.  
+- **Ortalama nem (Rhumave)** ile HSAD arasında zayıf bir pozitif ilişki vardır. Ancak bu etkinin sıcaklıkla birlikte değerlendirildiğinde daha anlamlı olabileceği düşünülmektedir.  
+- **Tatil olmayan günlerde (Holiday = 0)** ambulans çağrısı sayısı daha fazladır. Bu durum, iş ortamı ve dış mekân maruziyetinin etkisini yansıtabilir.  
+- **Ay değişkeni (Month)**, mevsimsellik etkisini göstermektedir. **Temmuz ve Ağustos** aylarında ambulans çağrılarında ciddi artışlar gözlemlenmiştir.  
+- **Yıllar (Year)** arasında farklılıklar belirgindir; özellikle **2018 ve 2019** yıllarında çağrılar artmıştır. Bu durum iklim değişikliği ve toplumsal farkındalıkla ilişkili olabilir.  
+- **Ayın günleri (Day)** incelendiğinde belirgin bir farklılık gözlenmemiştir; HSAD verileri günlere göre stabil görünmektedir.  
+- **Haftanın günleri (Dow)** incelendiğinde **Pazartesi ve Salı** günlerinde çağrıların daha yoğun olduğu görülmektedir; bu, haftalık çalışma düzeniyle ilişkili olabilir.  
+- **Prefecture adlarının sayısallaştırılmış hali (Prefecturename_encoded)**, bölgesel farklılıkları yansıtmaktadır. Coğrafi konumların HSAD üzerinde anlamlı etkileri olabilir.  
 
 ---
 

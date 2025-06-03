@@ -251,3 +251,8 @@ Model performansını artırmak için aşağıdaki stratejilerin uygulanması ta
 - **Hiperparametre optimizasyonu:** Grid search, random search veya Bayesian optimizasyonu gibi yöntemlerle modellerin parametreleri ince ayar yapılabilir.
 
 ---
+## Proje Youtube Videosu
+
+📺 [İlgili YouTube Videosunu İzle](https://youtu.be/DnW3eBIWH7I)
+
+---

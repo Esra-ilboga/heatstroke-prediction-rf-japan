@@ -87,18 +87,11 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 
 ### Histogramlar
 
-Aşağıdaki histogramlar sayısal sütunların veri dağılımını göstermektedir.
-
-| ![Histogram Tempmax](![image](https://github.com/user-attachments/assets/34938487-cc6e-427d-9b70-7d1077cd5538)
-) |
-|:----------------------------------------------:|
-| ![Histogram Rhumave](![image](https://github.com/user-attachments/assets/cfc3c9a3-a548-4f71-9a34-cb550bf7cfa5)
-) |
-|:-----------------------------------------------:|
-| ![Histogram HSAD](![image](https://github.com/user-attachments/assets/ae080994-52cf-4ba9-bed0-576c5e8f0f1f)
-) |
-|:-----------------------------------------:|
-
+| |
+|:--:|
+| ![Histogram Tempmax](https://github.com/user-attachments/assets/34938487-cc6e-427d-9b70-7d1077cd5538) |
+| ![Histogram Rhumave](https://github.com/user-attachments/assets/cfc3c9a3-a548-4f71-9a34-cb550bf7cfa5) |
+| ![Histogram HSAD](https://github.com/user-attachments/assets/ae080994-52cf-4ba9-bed0-576c5e8f0f1f) |
 ---
 
 **Açıklamalar:**

@@ -61,21 +61,12 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 
 ---
 
-### Scatter Plotlar
+| ![HSAD vs Tempmax](https://github.com/user-attachments/assets/e3830def-998e-49da-a69d-ba82a2899047) | ![HSAD vs Rhumave](https://github.com/user-attachments/assets/369a8ddf-a5ad-4174-9f95-a5184bb62905) |
+|:--------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|
+| ![HSAD vs Holiday](https://github.com/user-attachments/assets/bcb6c69f-acbe-4068-8802-1de4c7e029ee) | ![HSAD vs Month](https://github.com/user-attachments/assets/a1472c2a-54b8-4e1b-8370-e3cdef148aba) |
+| ![HSAD vs Year](https://github.com/user-attachments/assets/df2977e2-e5b2-464d-ae46-897f8f5c0043) | ![HSAD vs Day](https://github.com/user-attachments/assets/29ebeb28-c6bd-41a4-9b64-b436dd929a72) |
+| ![HSAD vs Dow](https://github.com/user-attachments/assets/275e98e3-0ed1-4ac1-bdc3-156af68ad1eb) | ![HSAD vs Prefecturename_encoded](https://github.com/user-attachments/assets/c0bcf4f6-a70f-445f-ab00-87496284b413) |
 
-| ![HSAD vs Tempmax](![image](https://github.com/user-attachments/assets/e3830def-998e-49da-a69d-ba82a2899047)
-) | ![HSAD vs Rhumave](![image](https://github.com/user-attachments/assets/369a8ddf-a5ad-4174-9f95-a5184bb62905)
-) |
-|:-----------------------------------------------:|:----------------------------------------------:|
-| ![HSAD vs Holiday](![image](https://github.com/user-attachments/assets/bcb6c69f-acbe-4068-8802-1de4c7e029ee)
-) | ![HSAD vs Month](![image](https://github.com/user-attachments/assets/a1472c2a-54b8-4e1b-8370-e3cdef148aba)
-)    |
-| ![HSAD vs Year](![image](https://github.com/user-attachments/assets/df2977e2-e5b2-464d-ae46-897f8f5c0043)
-)       | ![HSAD vs Day](![image](https://github.com/user-attachments/assets/29ebeb28-c6bd-41a4-9b64-b436dd929a72)
-) |
-| ![HSAD vs Dow](![image](https://github.com/user-attachments/assets/275e98e3-0ed1-4ac1-bdc3-156af68ad1eb)
-) | ![HSAD vs Prefecturename_encoded](![image](https://github.com/user-attachments/assets/c0bcf4f6-a70f-445f-ab00-87496284b413)
-) |
 
 ---
 

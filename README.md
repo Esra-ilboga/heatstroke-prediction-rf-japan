@@ -107,9 +107,16 @@ Bu dağılımlar, değişkenler arasındaki ölçek farklılıklarını da ortay
 
 ### Boxplot
 
-![Boxplot](path_to_boxplot.png)
+![Boxplot](![image](https://github.com/user-attachments/assets/aa12fd19-8423-4758-ba6f-a7c4c9a25678)
+)
 
-*Boxplot analizi özellikle Tempmax ve HSAD sütunlarında aykırı değerler olduğunu göstermektedir. Bu aykırı değerler kritik olayları temsil ettiğinden veri setinden çıkarılmamıştır.*
+**Açıklamalar:**
+Boxplot grafikleri, her bir sayısal değişkenin merkezi eğilimlerini, çeyrek değerlerini ve veri aralığını özetlerken; kutu dışında kalan noktalar potansiyel aykırı değerleri göstermektedir:
+
+- **HSAD** ve **Tempmax** değişkenlerinde çok sayıda aykırı değer tespit edilmiş olup, bu noktalar özellikle sıcak dalgaları gibi olağandışı durumları temsil edebilir.
+- **Rhumave** değişkeni ise daha dengeli ve simetrik bir dağılım sergilemektedir.
+
+Aykırı değerlerin doğrudan temizlenmesi, kritik bilgilerin kaybına yol açabileceğinden, bu değerlerin dikkatle analiz edilip korunması model başarımı açısından stratejik bir yaklaşımdır.
 
 ---
 

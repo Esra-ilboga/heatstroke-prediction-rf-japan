@@ -77,7 +77,8 @@ Tüm modeller için aşağıdaki metrikler karşılaştırılmıştır:
 
 | Random Forest | Gradient Boosting | K-Nearest Neighbors (KNN) |
 |---------------|-------------------|----------------------------|
-| ![RF ROC AUC](![image](https://github.com/user-attachments/assets/65cb12db-3407-40d8-8256-4d22470843d7)) | ![GB ROC AUC](![image](https://github.com/user-attachments/assets/e406d312-4fb3-4bdc-8d67-520812d8c942)) | ![KNN ROC AUC](![image](https://github.com/user-attachments/assets/fd40c092-4620-4a8e-80f0-7baee3d4ac4c)) |
+| ![RF ROC AUC](![image](https://github.com/user-attachments/assets/65cb12db-3407-40d8-8256-4d22470843d7)) | ![GB ROC AUC](![image](https://github.com/user-attachments/assets/e406d312-4fb3-4bdc-8d67-520812d8c942)) | ![KNN ROC AUC](![image](![image](https://github.com/user-attachments/assets/7b3ef4cd-ca9b-40f1-9546-2215ecad208a)
+)) |
 
 
 

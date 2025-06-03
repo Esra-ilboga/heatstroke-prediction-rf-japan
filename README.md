@@ -61,6 +61,8 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 
 ---
 
+### Scatter Plot Grafikleri
+
 | ![HSAD vs Tempmax](https://github.com/user-attachments/assets/e3830def-998e-49da-a69d-ba82a2899047) | ![HSAD vs Rhumave](https://github.com/user-attachments/assets/369a8ddf-a5ad-4174-9f95-a5184bb62905) |
 |:--------------------------------------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------:|
 | ![HSAD vs Holiday](https://github.com/user-attachments/assets/bcb6c69f-acbe-4068-8802-1de4c7e029ee) | ![HSAD vs Month](https://github.com/user-attachments/assets/a1472c2a-54b8-4e1b-8370-e3cdef148aba) |
@@ -87,20 +89,20 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 
 Aşağıdaki histogramlar sayısal sütunların veri dağılımını göstermektedir.
 
-| ![Histogram Tempmax](path_to_hist_tempmax.png) |
+| ![Histogram Tempmax](![image](https://github.com/user-attachments/assets/34938487-cc6e-427d-9b70-7d1077cd5538)
+) |
 |:----------------------------------------------:|
-
-*Tempmax sütunu sağa çarpık bir dağılıma sahiptir, yüksek sıcaklıklar nadir fakat kritik önemdedir.*
-
-| ![Histogram Rhumave](path_to_hist_rhumave.png) |
+| ![Histogram Rhumave](![image](https://github.com/user-attachments/assets/cfc3c9a3-a548-4f71-9a34-cb550bf7cfa5)
+) |
 |:-----------------------------------------------:|
-
-*Nem değerleri çoğunlukla %40-80 aralığında yoğunlaşmıştır.*
-
-| ![Histogram HSAD](path_to_hist_hsad.png) |
+| ![Histogram HSAD](![image](https://github.com/user-attachments/assets/ae080994-52cf-4ba9-bed0-576c5e8f0f1f)
+) |
 |:-----------------------------------------:|
 
-*HSAD çoğunlukla 0 civarında toplanmıştır; düşük ve yüksek çağrılar nispeten azdır.*
+---
+
+**Açıklamalar:**
+
 
 ---
 

@@ -69,7 +69,10 @@ Tüm modeller için aşağıdaki metrikler karşılaştırılmıştır:
 
 | Random Forest | Gradient Boosting | K-Nearest Neighbors (KNN) |
 |---------------|-------------------|----------------------------|
-| ![RF Confusion Matrix](![image](https://github.com/user-attachments/assets/9dc329c3-23dd-4efc-b127-abbd0197ae38)) | ![GB Confusion Matrix](![image](https://github.com/user-attachments/assets/079a43e0-a326-47e2-ba72-1c1689f0d821)) | ![KNN Confusion Matrix](![image](https://github.com/user-attachments/assets/1da583cc-3d84-4554-867d-bd7c211c4663)) |
+| ![RF Confusion Matrix](![image](https://github.com/user-attachments/assets/ccdefd2f-4853-4446-9fd3-c5d481340994)
+) | ![GB Confusion Matrix](![image](https://github.com/user-attachments/assets/246b4d3d-b3d8-48c3-bfec-e59af9b2a7d9)
+) | ![KNN Confusion Matrix](![image](https://github.com/user-attachments/assets/ad3a3bac-fd7a-42a0-ac07-f43f5d7d3179)
+) |
 
 ---
 
@@ -77,9 +80,10 @@ Tüm modeller için aşağıdaki metrikler karşılaştırılmıştır:
 
 | Random Forest | Gradient Boosting | K-Nearest Neighbors (KNN) |
 |---------------|-------------------|----------------------------|
-| ![RF ROC AUC](![image](https://github.com/user-attachments/assets/65cb12db-3407-40d8-8256-4d22470843d7)) | ![GB ROC AUC](![image](https://github.com/user-attachments/assets/e406d312-4fb3-4bdc-8d67-520812d8c942)) | ![KNN ROC AUC](![image](![image](https://github.com/user-attachments/assets/7b3ef4cd-ca9b-40f1-9546-2215ecad208a)
-)) |
-
+| ![RF ROC AUC](![image](https://github.com/user-attachments/assets/e1cbc09a-ae95-41e6-abb9-a692cf4a8546)
+) | ![GB ROC AUC](![image](https://github.com/user-attachments/assets/bbf6a7e1-dd30-4af5-a635-4f6118ce99f9)
+) | ![KNN ROC AUC](![image](https://github.com/user-attachments/assets/03b076ff-4b84-4e03-8ea5-570d466a2100)
+) |
 
 
 ---

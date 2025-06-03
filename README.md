@@ -251,6 +251,3 @@ Model performansını artırmak için aşağıdaki stratejilerin uygulanması ta
 - **Hiperparametre optimizasyonu:** Grid search, random search veya Bayesian optimizasyonu gibi yöntemlerle modellerin parametreleri ince ayar yapılabilir.
 
 ---
-
-➡️ Sonuç olarak, bu analizler sıcak hava koşullarında ısı çarpması vakalarının önceden tahmin edilmesine olanak tanıyarak, sağlık otoritelerinin etkili ve önleyici stratejiler geliştirmesine önemli katkılar sağlayacaktır.
----

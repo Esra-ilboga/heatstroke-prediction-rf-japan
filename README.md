@@ -107,8 +107,8 @@ Bu dağılımlar, değişkenler arasındaki ölçek farklılıklarını da ortay
 
 ### Boxplot
 
-![Boxplot](![image](https://github.com/user-attachments/assets/aa12fd19-8423-4758-ba6f-a7c4c9a25678)
-)
+![Boxplot](https://github.com/user-attachments/assets/aa12fd19-8423-4758-ba6f-a7c4c9a25678)
+
 
 **Açıklamalar:**
 Boxplot grafikleri, her bir sayısal değişkenin merkezi eğilimlerini, çeyrek değerlerini ve veri aralığını özetlerken; kutu dışında kalan noktalar potansiyel aykırı değerleri göstermektedir:
@@ -122,33 +122,73 @@ Aykırı değerlerin doğrudan temizlenmesi, kritik bilgilerin kaybına yol aça
 
 ## 🤖 Kullanılan Modeller
 
-### 1. Random Forest Classifier 🌲
-- `n_estimators=300`, `max_depth=30`, `min_samples_split=5`, `min_samples_leaf=2`
-- GridSearchCV ile hiperparametre optimizasyonu yapılmıştır
-- ROC AUC ve confusion matrix görselleştirmeleri eklenmiştir
+Bu projede üç farklı makine öğrenmesi algoritması uygulanmış ve performansları karşılaştırılmıştır. Her bir model, hiperparametre optimizasyonu ve uygun ön işleme adımlarıyla değerlendirilmiştir.
 
-### 2. Gradient Boosting 🌄
-- `random_state=42`
-- ROC AUC, confusion matrix ve classification report ile performans değerlendirmesi yapılmıştır
+---
 
-### 3. K-Nearest Neighbors (KNN) 📍
-- `n_neighbors=5`
-- `OneVsRestClassifier` ile çok sınıflı yapı desteklenmiştir
-- ROC AUC hesaplaması için one-hot encoding kullanılmıştır
+### 1. 🌲 Random Forest Classifier
+
+**Açıklama:**  
+Random Forest, çok sayıda karar ağacının topluluk öğrenmesi (ensemble learning) yaklaşımıyla bir araya getirilmesiyle oluşan güçlü bir sınıflandırma algoritmasıdır. Ağaçlar rastgele örnek ve özellik alt kümeleriyle eğitilir; sonuçlar oylama ile birleştirilir. Bu yaklaşım overfitting’i azaltır ve modelin genelleme başarımını artırır.
+
+**Uygulanan Hiperparametreler (GridSearchCV ile seçildi):**
+- `n_estimators = 300`: 300 adet karar ağacı oluşturulmuştur.
+- `max_depth = 30`: Ağaçların maksimum derinliği sınırlanarak aşırı öğrenme önlenmiştir.
+- `min_samples_split = 5`: Düğümlerin bölünebilmesi için minimum örnek sayısı.
+- `min_samples_leaf = 2`: Her yaprakta bulunması gereken minimum örnek sayısı.
+- `random_state = 42`: Sonuçların tekrar üretilebilirliğini sağlar.
+
+**Değerlendirme:**
+- ROC AUC eğrisi ile model ayrım gücü analiz edilmiştir.
+- Confusion Matrix ile sınıflandırma başarısı görselleştirilmiştir.
+
+---
+
+### 2. 🌄 Gradient Boosting
+
+**Açıklama:**  
+Gradient Boosting, zayıf öğrenicilerden (örneğin karar ağaçları) oluşan ardışık bir modelleme yöntemidir. Her yeni model, önceki modellerin hatalarını minimize edecek şekilde eğitilir. Bu yaklaşım, doğruluk oranını artırırken overfitting riskini kontrollü şekilde yönetir.
+
+**Uygulanan Parametreler:**
+- `random_state = 42`: Sabit rastgelelik ile tekrarlanabilirlik sağlanmıştır.
+
+**Değerlendirme:**
+- ROC AUC ve confusion matrix ile modelin ayrım gücü ve hata tipi analizi yapılmıştır.
+- Classification Report ile precision, recall ve F1 skorları özetlenmiştir.
+
+---
+
+### 3. 📍 K-Nearest Neighbors (KNN)
+
+**Açıklama:**  
+KNN, sezgisel ve örnek tabanlı bir sınıflandırma yöntemidir. Yeni bir gözlem, eğitim verisindeki en yakın K komşusunun sınıfına göre sınıflandırılır. Bu projede çok sınıflı yapı için `OneVsRestClassifier` stratejisi uygulanmıştır.
+
+**Uygulanan Parametreler:**
+- `n_neighbors = 5`: Tahminler en yakın 5 komşu üzerinden yapılmıştır.
+
+**Ek Özellikler:**
+- ROC AUC hesaplamaları için çoklu sınıflar one-hot encoding ile dönüştürülmüş ve her sınıf için ayrı ROC eğrisi çizilmiştir.
+
+---
+
+Her model, veri setindeki sınıf dengesizliği, aykırı değerler ve özellik ölçekleme ihtiyaçları göz önünde bulundurularak dikkatlice değerlendirilmiş ve yorumlanmıştır.
+
 
 ---
 
 ## 📊 Değerlendirme Metrikleri
 
-Tüm modeller için aşağıdaki metrikler karşılaştırılmıştır:
+Aşağıda **Random Forest**, **Gradient Boosting** ve **K-Nearest Neighbors (KNN)** modellerinin sınıflandırma başarımı, çeşitli metrikler kullanılarak karşılaştırılmıştır:
 
-- 🎯 Accuracy
-- 🎯 Precision (macro)
-- 🎯 Recall (macro)
-- 🎯 F1-Score (macro)
-- 📈 ROC AUC Eğrisi (Multi-class)
-- 📉 Confusion Matrix
-
+| Metrik                | Random Forest 🌲 | Gradient Boosting 🌄 | KNN 📍       |
+|------------------------|------------------|------------------------|--------------|
+| **Accuracy**           | %55              | **%56**                | %48          |
+| **Precision (Macro)**  | %53              | **%54**                | %46          |
+| **Recall (Macro)**     | %56              | **%57**                | %44          |
+| **F1-Score (Macro)**   | %54              | **%55**                | %45          |
+| **En Başarılı Sınıf**  | Sınıf 4 (%72 recall) | Sınıf 4 (%77 recall)  | Sınıf 1 (%59 recall) |
+| **En Zayıf Sınıf**     | Sınıf 3 (%41 recall) | Sınıf 3 (%42 recall) | Sınıf 4 (%32 recall) |
+| **ROC AUC Skoru**      | Orta, dengesiz   | **Daha belirgin ve dengeli** | Düşük ve dengesiz |
 ---
 
 ## 📈 Confusion Matrix ve ROC AUC Grafikleri 
@@ -159,6 +199,10 @@ Tüm modeller için aşağıdaki metrikler karşılaştırılmıştır:
 |---------------|-------------------|----------------------------|
 | ![RF Confusion Matrix](https://github.com/user-attachments/assets/ccdefd2f-4853-4446-9fd3-c5d481340994) | ![GB Confusion Matrix](https://github.com/user-attachments/assets/246b4d3d-b3d8-48c3-bfec-e59af9b2a7d9) | ![KNN Confusion Matrix](https://github.com/user-attachments/assets/ad3a3bac-fd7a-42a0-ac07-f43f5d7d3179) |
 
+#### 1. **Confusion Matrix Karşılaştırması**  
+- **Random Forest**: Sınıf 0 ve 4 için güçlü tahmin, ancak sınıf 2 ve 3 için zayıf.
+- **Gradient Boosting**: Sınıf 4 için en güçlü ayrım, genel olarak daha dengeli dağılım.
+- **KNN**: Tüm sınıflarda zayıf tahmin performansı, özellikle sınıf 2, 3 ve 4 için.
 ---
 
 ### 📉 ROC AUC Eğrisi Karşılaştırması
@@ -167,24 +211,46 @@ Tüm modeller için aşağıdaki metrikler karşılaştırılmıştır:
 |---------------|-------------------|----------------------------|
 | ![RF ROC AUC](https://github.com/user-attachments/assets/e1cbc09a-ae95-41e6-abb9-a692cf4a8546) | ![GB ROC AUC](https://github.com/user-attachments/assets/bbf6a7e1-dd30-4af5-a635-4f6118ce99f9) | ![KNN ROC AUC](https://github.com/user-attachments/assets/03b076ff-4b84-4e03-8ea5-570d466a2100) |
 
-
-
----
-
-## 🧠 Sonuç
-
-- **Gradient Boosting**, ROC AUC ve sınıf dengesi açısından en iyi performansı sergilemiştir.
-- **Random Forest**, istikrarlı ancak bazı sınıflarda ayrım gücü zayıf kalmıştır.
-- **KNN**, doğruluk oranı ve AUC açısından en zayıf sonuçları vermiştir.
-
-➡️ Bu analizler, sıcak hava koşullarında ısı çarpması vakalarının önceden tahmin edilmesini sağlayarak sağlık otoriteleri için önleyici stratejiler geliştirilmesine katkı sağlamayı hedefler.
+#### 2. **ROC AUC Eğrileri**
+- **Random Forest**: Sınıflar arası ayrım gücü orta seviyede, dengesizlik mevcut.
+- **Gradient Boosting**: ROC eğrisi daha belirgin, AUC değerleri sınıflar arasında daha dengeli.
+- **KNN**: ROC eğrileri zayıf, modelin ayrım kapasitesi düşük.
 
 ---
 
-## 💾 Kurulum ve Kullanım
+## 🧠 Değerlendirme ve Sonuç
 
-```bash
-git clone https://github.com/kullanici-adi/heatstroke-prediction-rf-japan.git
-cd heatstroke-prediction-rf-japan
-pip install -r requirements.txt
-python model_training.py
+Bu çalışmada, sıcak hava koşullarında ısı çarpması vakalarının erken tahmini amacıyla sınıflandırma problemini çözmek üzere **Random Forest**, **Gradient Boosting** ve **K-Nearest Neighbors (KNN)** algoritmaları uygulanmış; modeller, aynı veri seti üzerinde çeşitli performans metrikleri kullanılarak kapsamlı bir şekilde değerlendirilmiştir. Analizlerde doğruluk (accuracy), precision, recall, F1-score, confusion matrix ve ROC-AUC gibi ölçütler kullanılmıştır.
+
+### Model Performansları
+
+- **Random Forest:**  
+  Genel doğruluk oranı yaklaşık %55, makro F1 skoru %54 civarında gerçekleşmiştir. Model, özellikle yüksek destekli sınıflar olan 0 ve 4 numaralı sınıflarda başarılı tahminler yaparken, sınıf 2 ve 3’te ayırt edici gücü belirgin şekilde düşmüştür. Confusion matrix ve ROC eğrileri, modelin sınıflar arasında orta düzeyde fakat dengeli bir ayrım yeteneğine sahip olduğunu ortaya koymuştur.
+
+- **Gradient Boosting:**  
+  Doğruluk açısından Random Forest ile benzer (%56) bir sonuç elde edilmiş olmasına rağmen, ROC AUC ve sınıf bazlı performans analizlerinde daha üstün bir performans sergilemiştir. Sınıf 4’te %77 gibi yüksek bir recall değeri ile öne çıkmış, bu da özellikle az örnekli ve zorlayıcı sınıflarda yüksek başarıya işaret etmektedir. Sınıf 0 ve diğer sınıflarda da dengeli ve güçlü tahminler gerçekleştirmiştir. Genel olarak, Gradient Boosting modeli daha stabil ve tutarlı bir sınıflandırma kabiliyeti göstermiştir.
+
+- **K-Nearest Neighbors (KNN):**  
+  Diğer iki modele kıyasla daha düşük bir doğruluk (%48) ve makro performans metriklerinde zayıf sonuçlar elde edilmiştir. Sınıflar arası ayrım gücü sınırlı kalmış, özellikle sınıf 2, 3 ve 4’te precision ve recall değerleri anlamlı şekilde düşmüştür. ROC eğrileri de bu zayıflığı doğrulamaktadır; KNN, sınıf ayrımında yetersiz kalmış ve genel tahmin gücü düşük olmuştur.
+
+### Genel Değerlendirme
+
+- **🔝 En Başarılı Model:**  
+  **Gradient Boosting**, metrikler arasında daha dengeli bir dağılım ve güçlü sınıf ayrımı ile öne çıkmış, özellikle zor ve az destekli sınıflarda yüksek başarı sağlamıştır.
+
+- **🛠️ İyileştirme Gerektiren Model:**  
+  **KNN**, düşük doğruluk ve sınıflar arası dengesiz tahmin gücü nedeniyle performans açısından diğer modellerin gerisinde kalmıştır.
+
+### Öneriler ve Gelecek Çalışmalar
+
+Model performansını artırmak için aşağıdaki stratejilerin uygulanması tavsiye edilir:
+
+- **Özellik mühendisliği:** Daha ayırt edici ve anlamlı özellikler çıkarılarak modellerin genel başarısı artırılabilir.  
+- **Gelişmiş modellerin kullanımı:** XGBoost, LightGBM gibi güçlü gradyan artırma algoritmaları denenebilir.  
+- **Ensemble ve model stacking:** Modellerin kombinasyonu ile tahmin performansı daha da güçlendirilebilir.  
+- **Hiperparametre optimizasyonu:** Grid search, random search veya Bayesian optimizasyonu gibi yöntemlerle modellerin parametreleri ince ayar yapılabilir.
+
+---
+
+➡️ Sonuç olarak, bu analizler sıcak hava koşullarında ısı çarpması vakalarının önceden tahmin edilmesine olanak tanıyarak, sağlık otoritelerinin etkili ve önleyici stratejiler geliştirmesine önemli katkılar sağlayacaktır.
+---

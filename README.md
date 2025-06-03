@@ -63,19 +63,30 @@ Bu proje, Japonya'dan alınan ısıya bağlı sıcak çarpması ambulans çağr�
 
 ### Scatter Plotlar
 
-Aşağıdaki grafikler, HSAD hedef değişkeni ile bazı önemli özelliklerin ilişkisini göstermektedir.
-
-| ![HSAD vs Tempmax](path_to_scatter_tempmax.png) | ![HSAD vs Rhumave](path_to_scatter_rhumave.png) |
+| ![HSAD vs Tempmax](![image](https://github.com/user-attachments/assets/e3830def-998e-49da-a69d-ba82a2899047)
+) | ![HSAD vs Rhumave](![image](https://github.com/user-attachments/assets/369a8ddf-a5ad-4174-9f95-a5184bb62905)
+) |
 |:-----------------------------------------------:|:----------------------------------------------:|
+| ![HSAD vs Holiday](![image](https://github.com/user-attachments/assets/bcb6c69f-acbe-4068-8802-1de4c7e029ee)
+) | ![HSAD vs Month](![image](https://github.com/user-attachments/assets/a1472c2a-54b8-4e1b-8370-e3cdef148aba)
+)    |
+| ![HSAD vs Year](![image](https://github.com/user-attachments/assets/df2977e2-e5b2-464d-ae46-897f8f5c0043)
+)       | ![HSAD vs Day](![image](https://github.com/user-attachments/assets/29ebeb28-c6bd-41a4-9b64-b436dd929a72)
+) |
+| ![HSAD vs Dow](![image](https://github.com/user-attachments/assets/275e98e3-0ed1-4ac1-bdc3-156af68ad1eb)
+) | ![HSAD vs Prefecturename_encoded](![image](https://github.com/user-attachments/assets/c0bcf4f6-a70f-445f-ab00-87496284b413)
+) |
 
-*HSAD ile Maksimum Sıcaklık arasında pozitif ilişki vardır. 30°C üzerindeki sıcaklıklarda çağrılar artmaktadır.*  
-*Ortalama nem ile HSAD arasında hafif pozitif ilişki gözlenir. Nem, sıcaklıkla birlikte değerlendirilmelidir.*
+---
 
-| ![HSAD vs Holiday](path_to_scatter_holiday.png) | ![HSAD vs Month](path_to_scatter_month.png) |
-|:-----------------------------------------------:|:------------------------------------------:|
+**Açıklamalar:**
 
-*Tatil olmayan günlerde ambulans çağrısı daha fazladır.*  
-*Temmuz ve Ağustos aylarında çağrılar yoğunlaşmıştır, mevsimsel etkiler vardır.*
+- *HSAD ile Maksimum Sıcaklık arasında pozitif ilişki vardır. 30°C üzerindeki sıcaklıklarda çağrılar artmaktadır.*  
+- *Ortalama nem ile HSAD arasında hafif pozitif ilişki gözlenir. Nem, sıcaklıkla birlikte değerlendirilmelidir.*  
+- *Tatil olmayan günlerde ambulans çağrısı daha fazladır.*  
+- *Temmuz ve Ağustos aylarında çağrılar yoğunlaşmıştır, mevsimsel etkiler vardır.*  
+- *2018 ve 2019 yıllarında HSAD çağrılarında artış görülmektedir.*  
+- *Diğer özelliklerin HSAD ile ilişkileri incelenmiştir ve anlamlı bulgulara ulaşılmıştır.*
 
 ---
 
